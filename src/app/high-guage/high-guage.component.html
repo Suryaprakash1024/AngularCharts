@@ -1,0 +1,9 @@
+<div class="container-fluid py-3">
+  <div class="row mt-5">
+    <div class="col-4"  *ngFor="let chart of ChartsData; let i = index">
+      <lib-highchart-gauge [size]=300 [value]=chart.value [ringWidth]=40 [limitData]="getLimitData(i)" 
+      [metricLabel]="chart.metricLabel" [bestValue]=chart.bestValue [index]=i [innerLabel]="chart.innerLabel" 
+      [outerLabel]="chart.outerlabel" (click)="clicked(i)" [bottomLabel]="chart.bottomLabel"></lib-highchart-gauge>
+    </div>
+  </div>
+</div>

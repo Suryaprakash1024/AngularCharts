@@ -1,0 +1,10 @@
+      <div [id]="'chartContainer'+index"></div>
+      <div class="mar-left-20" style="margin-bottom: 5rem;">
+        <strong *ngIf="theBest === 'LTB'">LTB</strong>
+        <span class="bottom-label" [ngClass]="{'mar-left-20': theBest === 'LTB' ,'mar-left-25' : theBest === 'HTB'}">
+          <strong>{{bottomLabel}}</strong>
+        </span>
+        <span class="mar-left-20" *ngIf="theBest === 'HTB'">
+          <strong>HTB</strong>
+        </span>
+      </div>

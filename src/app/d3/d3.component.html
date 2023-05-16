@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let chart of ChartsData; let i = index">
+            <lib-gauge-chart [size]=300 [value]=chart.value [ringWidth]=40 [limitData]="getLimitData(i)" 
+            [metricLabel]="chart.metricLabel" [bestValue]=chart.bestValue [index]=i [innerLabel]="chart.innerLabel" 
+            [outerLabel]="chart.outerlabel" (click)="clicked(i)" [bottomLabel]="chart.bottomLabel"></lib-gauge-chart>
+        </div>
+    </div>
+</div>
