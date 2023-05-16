@@ -1,0 +1,67 @@
+[
+    {
+        "configurationId": 1,
+        "value": 1000.00,
+        "limit1": 0,
+        "limit2": 500,
+        "limit3": 2200,
+        "limit4": 2500,
+        "metricLabel": "RAM",
+        "bestValue": "HTB",
+        "uomSymbol": "$",
+        "uomPosition": "Prefix",
+        "bottomLabel": "Last 30 Days"
+    },
+    {
+        "configurationId": 2,
+        "value": 34.00,
+        "limit1": 0,
+        "limit2": 5,
+        "limit3": 25,
+        "limit4": 100,
+        "metricLabel": "Energy",
+        "bestValue": "LTB",
+        "uomSymbol": "%",
+        "uomPosition": "Suffix",
+        "bottomLabel": "Last 60 Days"
+    },
+    {
+        "configurationId": 3,
+        "value": 100.00,
+        "limit1": 0,
+        "limit2": 50,
+        "limit3": 150,
+        "limit4": 250,
+        "metricLabel": "Compute Query",
+        "bestValue": "HTB",
+        "uomSymbol": "",
+        "uomPosition": "Suffix",
+        "bottomLabel": "Last 60 Days"
+    },
+    {
+        "configurationId": 4,
+        "value": 15.00,
+        "limit1": 0,
+        "limit2": 5,
+        "limit3": 20,
+        "limit4": 50,
+        "metricLabel": "Compute Query",
+        "bestValue": "LTB",
+        "uomSymbol": "",
+        "uomPosition": "Suffix",
+        "bottomLabel": "Last 60 Days"
+    },
+    {
+        "configurationId": 5,
+        "value": 1700.00,
+        "limit1": 0,
+        "limit2": 400,
+        "limit3": 800,
+        "limit4": 4000,
+        "metricLabel": "Pending Tickets",
+        "bestValue": "HTB",
+        "uomSymbol": "",
+        "uomPosition": "Suffix",
+        "bottomLabel": "Last 120 Days"
+    }
+]

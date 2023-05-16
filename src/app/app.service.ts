@@ -10,7 +10,8 @@ import { Chart } from './models/Chart';
   export class AppService {
   
     constructor(private http: HttpClient) { }
-    private apiEndpoint = 'https://localhost:7255/api/Home/GetGaugeConfigurations';
+    private apiEndpoint = '../assets/data/gaugechart.json'
+    //'https://localhost:7255/api/Home/GetGaugeConfigurations';
 
   
     // API calls will go here
