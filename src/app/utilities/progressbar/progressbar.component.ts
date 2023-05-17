@@ -10,12 +10,17 @@ import { colorCodes } from 'src/app/models/color-code';
 export class ProgressbarComponent {
 
   @Input() value: number = 0;
+  @Input() index: number = 0;
+  @Input() heading: string = '';
+  @Input() scaleColor:string = 'green';
   
   progress: any;
   ContainerStyles = {};
 
   ngOnInit() {
-    this.drawProgressBar();
+    setTimeout( (x: any) => {
+      this.drawProgressBar();
+    },10);
   }
   constructor(){
     this.ContainerStyles = {
@@ -24,10 +29,14 @@ export class ProgressbarComponent {
     };
   }
 
+  getClassName(){
+    return 'progress-bar'+this.index;
+  }
+
   drawProgressBar() {
-    var svg = d3.select('.progress-bar')
+    var svg = d3.select('.progress-bar'+this.index)
       .append('svg')
-      .attr('height', 100)
+      .attr('height', 20)
       .attr('width', window.innerWidth * 0.5);
 
     var states = ['started', 'inProgress', 'completed'],
@@ -48,11 +57,11 @@ export class ProgressbarComponent {
         return window.innerWidth * 0.5;
       })
       .attr('x', 0);
-
+    var scaleColor :any = this.scaleColor.toString();
     this.progress = svg.append('rect')
       .attr('class', 'progress-rect')
       .attr('fill', function (): any {
-        return colorCodes.green;//colorScale(currentState);
+        return scaleColor == 'green' ? colorCodes['green'] : scaleColor == 'red' ? colorCodes['red'] : colorCodes['yellow'];
       })
       .attr('height', 15)
       .attr('width', 0)
