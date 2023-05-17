@@ -9,6 +9,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HighGuageComponent } from './high-guage/high-guage.component';
 import { D3Component } from './d3/d3.component';
 import { LibHighchartGaugeComponent } from './high-guage/lib-highchart-gauge/lib-highchart-gauge.component';
+import { UtilitiesComponent } from './utilities/utilities.component';
+import { ProgressbarComponent } from './utilities/progressbar/progressbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LibHighchartGaugeComponent } from './high-guage/lib-highchart-gauge/lib
     GaugeChartComponent,
     HighGuageComponent,
     D3Component,
-    LibHighchartGaugeComponent
+    LibHighchartGaugeComponent,
+    UtilitiesComponent,
+    ProgressbarComponent
   ],
   imports: [
     BrowserModule,

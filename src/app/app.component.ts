@@ -13,9 +13,12 @@ export class AppComponent{
   constructor(private apiService: AppService,
     private router: Router) {}
 
-  toggleView() {
+  toggleView(isUtil:boolean = false) {
     const currentUrl = this.router.url;
-
+    if(isUtil){
+      this.router.navigateByUrl('/Utilities');
+      return;
+    }
     if (currentUrl === '/highcharts') {
       this.router.navigateByUrl('/d3');
     } else {
