@@ -1,6 +1,22 @@
+<lib-donutchart></lib-donutchart>
+
 <lib-progressbar [value]="60" [index]="1" [heading]="'Productivity'" [scaleColor]="'yellow'"></lib-progressbar>
 <lib-progressbar [value]="80" [index]="2" [heading]="'Utilization Rate'" [scaleColor]="'green'"></lib-progressbar>
 <lib-progressbar [value]="20" [index]="3" [heading]="'Annual Payments'" [scaleColor]="'red'"></lib-progressbar>
 
 <lib-linechart class="pt-4"></lib-linechart>
-<lib-circularprogressbar></lib-circularprogressbar>
+<div class="row">
+    <div class="col-md-3">
+        <lib-circularprogressbar [index]="1" [innerLabel]="'50%'" [scaleColor]="'yellow'" 
+        [heading]="'Productivity'" [value]="50"></lib-circularprogressbar>
+    </div>
+    <div class="col-md-3">
+        <lib-circularprogressbar [index]="2" [innerLabel]="'20%'" [scaleColor]="'red'" 
+        [heading]="'Utilization Rate'" [value]="20"></lib-circularprogressbar>
+    </div>
+    <div class="col-md-3">
+        <lib-circularprogressbar [index]="3" [innerLabel]="'80%'" [scaleColor]="'green'" 
+        [heading]="'Annual Payments'" [value]="80"></lib-circularprogressbar>
+    </div>
+</div>
+

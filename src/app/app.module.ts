@@ -13,6 +13,7 @@ import { UtilitiesComponent } from './utilities/utilities.component';
 import { ProgressbarComponent } from './utilities/progressbar/progressbar.component';
 import { LinechartComponent } from './utilities/linechart/linechart.component';
 import { CircularprogressbarComponent } from './utilities/circularprogressbar/circularprogressbar.component';
+import { DonutchartComponent } from './utilities/donutchart/donutchart.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CircularprogressbarComponent } from './utilities/circularprogressbar/ci
     UtilitiesComponent,
     ProgressbarComponent,
     LinechartComponent,
-    CircularprogressbarComponent
+    CircularprogressbarComponent,
+    DonutchartComponent
   ],
   imports: [
     BrowserModule,
