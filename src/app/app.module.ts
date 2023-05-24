@@ -11,7 +11,7 @@ import { D3Component } from './d3/d3.component';
 import { LibHighchartGaugeComponent } from './high-guage/lib-highchart-gauge/lib-highchart-gauge.component';
 import { UtilitiesComponent } from './utilities/utilities.component';
 import { ProgressbarComponent } from './utilities/progressbar/progressbar.component';
-import { BarchartComponent } from './utilities/barchart/barchart.component';
+import { LinechartComponent } from './utilities/linechart/linechart.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { BarchartComponent } from './utilities/barchart/barchart.component';
     LibHighchartGaugeComponent,
     UtilitiesComponent,
     ProgressbarComponent,
-    BarchartComponent
+    LinechartComponent
   ],
   imports: [
     BrowserModule,

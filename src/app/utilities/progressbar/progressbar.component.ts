@@ -82,6 +82,7 @@ export class ProgressbarComponent {
     .attr('y', 12.5)
     .attr('font-size', 12)
     .attr('fill', '#000')
+    .attr('font-weight','700');
   }
   moveProgressBar(state: any) {
     var states = ['started', 'inProgress', 'completed'],
