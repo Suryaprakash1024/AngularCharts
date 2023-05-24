@@ -12,6 +12,7 @@ import { LibHighchartGaugeComponent } from './high-guage/lib-highchart-gauge/lib
 import { UtilitiesComponent } from './utilities/utilities.component';
 import { ProgressbarComponent } from './utilities/progressbar/progressbar.component';
 import { LinechartComponent } from './utilities/linechart/linechart.component';
+import { CircularprogressbarComponent } from './utilities/circularprogressbar/circularprogressbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LinechartComponent } from './utilities/linechart/linechart.component';
     LibHighchartGaugeComponent,
     UtilitiesComponent,
     ProgressbarComponent,
-    LinechartComponent
+    LinechartComponent,
+    CircularprogressbarComponent
   ],
   imports: [
     BrowserModule,

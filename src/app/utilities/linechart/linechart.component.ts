@@ -7,9 +7,7 @@ import * as d3 from "d3";
   styleUrls: ['./linechart.component.css']
 })
 export class LinechartComponent {
-
-
-
+  
   ngOnInit() {
     setTimeout((x: any) => {
       this.draw();
